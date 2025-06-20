@@ -1,5 +1,11 @@
-# Python
+# 🤖 Automatizaciones en Python
 
-Hola! en este espacio comparto mis scripts de automatizaciones que vengo realizando aplicando Python y sus librerías. 
+Esta carpeta contiene scripts desarrollados para automatizar tareas repetitivas, generar reportes o realizar procesos simples de análisis de datos.
 
-La práctica hace al maestro 😎
+Cada script incluye:
+- Explicación breve de su uso
+- Librerías utilizadas
+- Input y output
+
+> 🔧 Herramientas: Python, Pandas, openpyxl, os, etc.
+
