@@ -1,6 +1,7 @@
 import pandas as pd
 import os   #interactua con el sistema operativo
 
+#Ruta de la carpeta donde estan los archivos
 ruta = r"C:\Users\user\OneDrive\Desktop\Practica\PROYECTOS\Proy_Customer_Success_BUK"
 
 meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio"]
