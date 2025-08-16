@@ -1,0 +1,43 @@
+#En este mini proyecto se desarrolla un scrip para automatizar el proceso de conectar a una API + procesamiento de información + descarga de info.
+#PROYECTO AUTOMATIZACION: API + Automatizacion
+
+import requests
+import pandas as pd
+import json
+
+#Conectar API con parámetros
+url= "https://jsonplaceholder.typicode.com/posts"
+params = {"userId": 1}
+response = requests.get(url, params=params)
+
+#Validamos y Guardamos
+if response.status_code == 200: 
+    data = response.json()
+    print("Se conectó con éxito")
+else:
+    print(f"error al conectarse", response.status_code)
+
+#Crear nuevos datos y enviar
+nuevo_post = {
+    "title": "Proyecto nuevo api",
+    "body": "este es mi nuevo post",
+    "userId": 1
+}
+response = requests.post(url, json=nuevo_post)
+if response.status_code == 201:
+    print("se creo nuevo post")
+else:
+    print("error al crear nuevo post")
+#automatizar descarga: 
+usuarios = [1, 2, 3]
+all_data = []
+for user in usuarios: 
+    params = {"userId": user}
+    r = requests.get(url, params=params)
+    if r.status_code == 200:
+        all_data.extend(r.json())
+
+#Guardar la data en archivo excel
+df = pd.DataFrame(all_data)
+df.to_excel("Proy_final.xlsx", index=False)
+print("Archivo generado con éxito")
