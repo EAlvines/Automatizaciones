@@ -1,4 +1,4 @@
-# 🤖 Automatizaciones en Python
+# 🤖 Automatizaciones
 
 Esta carpeta contiene scripts desarrollados para automatizar tareas repetitivas, generar reportes o realizar procesos simples de análisis de datos.
 
