@@ -57,13 +57,3 @@ Procesamiento de múltiples archivos CSV de forma dinámica.
 Transformación y limpieza centralizada en SQL.
 Dashboard actualizado automáticamente en Power BI.
 
-Imagen:
-Ejecución del Pipeline con el Trigger configurado: 
-
-![image.png](attachment:f68ed757-9cc2-4ec3-aa3e-0380ec7ce020:image.png)
-
-Validación de Tablas en Azure SQL DB
-![image.png](attachment:6445f871-78d6-4b8d-9f9a-afc40351a19b:image.png)
-
-Power BI:
-![image.png](attachment:17db85f7-2fa2-478c-b35f-9eff084cafd0:image.png)
